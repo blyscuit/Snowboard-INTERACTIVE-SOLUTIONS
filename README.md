@@ -54,7 +54,7 @@ While developing, you will probably rely mostly on `npm start`; however, there a
 
 
 ## Thank You
-davezuko/react-redux-starter-kit
+davezuko/react-redux-starter-kit(https://github.com/davezuko/react-redux-starter-kit)
 
 This project wouldn't be possible without help from the community, so I'd like to highlight some of its biggest contributors. Thank you all for your hard work, you've made my life a lot easier and taught me a lot in the process.
 
