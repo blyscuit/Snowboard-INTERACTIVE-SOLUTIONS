@@ -6,6 +6,7 @@
 max-height:100%;
 }
 .inside{
+  font-size: 1.8rem;
   position: absolute;
   font-weight:200;
   color: #555
@@ -29,8 +30,8 @@ Button{
     border: 1px solid #999;
 }
 .rcorners2{
-    border: 1px solid #999;
-    color: #999;
+    border: 1px solid #555;
+    color: #555;
     font-size: 2rem;
     padding: 20px;
     width: 200px;
@@ -38,4 +39,9 @@ Button{
     height: 150px;
 }.rcorners2:hover {
     border: 1px solid #ddd;
+}
+.white{
+  background-color: #fff;
+  width: 100%;
+  padding-bottom: 20rem;
 }
