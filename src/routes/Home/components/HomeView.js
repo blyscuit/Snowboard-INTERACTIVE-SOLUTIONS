@@ -3,6 +3,10 @@ import { Component } from 'react'
 import NextImage from '../assets/next.png'
 import PrevImage from '../assets/prev.png'
 import BoardImage from '../assets/board.png'
+import BoardImage2 from '../assets/board2.jpg'
+import BoardImage3 from '../assets/board3.jpg'
+import BoardImage4 from '../assets/board4.jpg'
+import BoardImage5 from '../assets/board5.jpg'
 import './HomeView.scss'
 import Slider from 'react-slick';
 // export const HomeView = () => (
@@ -37,14 +41,24 @@ export default class HomeView extends Component{
       centerMode: true,
       slidesToShow:3,
       focusOnSelect:true,
-      nextArrow:<img
-      alt='Logo'
-      className='Logo'
-      src={NextImage} />,
-      prevArrow:<img
-      alt='Logo'
-      className='Logo'
-      src={PrevImage}/>,
+      nextArrow:<div onClick={this.next} style={{height: 10+'rem',
+      width: 3+'rem',
+      marginTop: -7+'rem'}}><img
+      alt='next'
+      className='scrollButton'
+      src={NextImage}
+      style={{height: 10+'rem',
+      width: 5+'rem',
+      marginTop: -7+'rem'}}/></div>,
+      prevArrow:<div onClick={this.previous} style={{height: 10+'rem',
+      width: 3+'rem',
+      marginTop: -7+'rem'}}><img
+      alt='next'
+      className='scrollButton'
+      src={PrevImage}
+      style={{height: 10+'rem',
+      width: 5+'rem',
+      marginTop: -7+'rem'}}/></div>,
     };
     return (
       <div className='container text-center'>
@@ -52,11 +66,11 @@ export default class HomeView extends Component{
       <p className="subtitle">EOWIF AWEILFHL WEFILHE EAWFHLI EST</p>
       <Slider ref='slider' {...settings}>
       <div><img className="snowboard" src={BoardImage} /><p className="boardName">SNOWBOARD EXTREME SERIES</p></div>
-      <div><img className="snowboard" src={BoardImage} /><p className="boardName">SNOWBOARD EXTREME 2</p></div>
-      <div><img className="snowboard" src={BoardImage} /><p className="boardName">SNOWBOARD PRO SERIES</p></div>
-      <div><img className="snowboard" src={BoardImage} /><p className="boardName">SNOWBOARD EXTREME SERIES 3</p></div>
-      <div><img className="snowboard" src={BoardImage} /><p className="boardName">SNOWBOARD AIR SERIES</p></div>
-      <div><img className="snowboard" src={BoardImage} /><p className="boardName">SNOWBOARD NORMAL SERIES</p></div>
+      <div><img className="snowboard" src={BoardImage2} /><p className="boardName">SNOWBOARD EXTREME 2</p></div>
+      <div><img className="snowboard" src={BoardImage3} /><p className="boardName">SNOWBOARD PRO SERIES</p></div>
+      <div><img className="snowboard" src={BoardImage4} /><p className="boardName">SNOWBOARD EXTREME SERIES 3</p></div>
+      <div><img className="snowboard" src={BoardImage5} /><p className="boardName">SNOWBOARD AIR SERIES</p></div>
+      <div><img className="snowboard" src={BoardImage3} /><p className="boardName">SNOWBOARD NORMAL SERIES</p></div>
       </Slider>
 
       <div style={{textAlign: 'center'}}>

@@ -12,13 +12,13 @@
 
 .slick-slide{
     color:rgba(0, 0, 0, 0.0);
-    opacity:0.3;
-    filter:alpha(opacity=30); /* For IE8 and earlier */
+    opacity:0.25;
+    filter:alpha(opacity=25); /* For IE8 and earlier */
 }
 .slick-active{
 color:rgba(0, 0, 0, 0.0);
-opacity:0.55;
-filter:alpha(opacity=55); /* For IE8 and earlier */
+opacity:0.50;
+filter:alpha(opacity=50); /* For IE8 and earlier */
 }
 .slick-center{
   opacity:1.0;
@@ -31,4 +31,9 @@ filter:alpha(opacity=55); /* For IE8 and earlier */
 }
 .title{
   font-weight: bold;
+}
+.slick-arrow{
+  display: inline;
+  height: 10rem;
+  width: 300%;
 }
