@@ -39,26 +39,38 @@ export default class HomeView extends Component{
       className: 'center',
       centerPadding: '60px',
       centerMode: true,
-      slidesToShow:3,
       focusOnSelect:true,
-      nextArrow:<div onClick={this.next} style={{height: 10+'rem',
-      width: 3+'rem',
-      marginTop: -7+'rem'}}><img
+      responsive:[ { breakpoint: 400, settings: { arrows:false,slidesToShow: 1 } },{ breakpoint: 768, settings: { arrows:false,slidesToShow: 3 } }, { breakpoint: 1024, settings: { arrows:true,slidesToShow: 3 } }, { breakpoint: 100000, settings: {slidesToShow: 5 }} ],
+      nextArrow:<div>
+      <button  style={{height: 10+'rem',
+      width: 5+'rem',
+      marginTop: -9+'rem',
+      marginLeft: -2+'rem',
+      opacity:0.0}} onClick={this.next}></button>
+      <img
       alt='next'
       className='scrollButton'
       src={NextImage}
       style={{height: 10+'rem',
+      zIndex:999,
       width: 5+'rem',
-      marginTop: -7+'rem'}}/></div>,
-      prevArrow:<div onClick={this.previous} style={{height: 10+'rem',
-      width: 3+'rem',
-      marginTop: -7+'rem'}}><img
+      marginTop: -9+'rem',
+      marginLeft: -2+'rem',}}/></div>,
+      prevArrow:<div>
+      <button  style={{height: 10+'rem',
+      width: 5+'rem',
+      marginTop: -9+'rem',
+      marginLeft: -1+'rem',
+      opacity:0.0}} onClick={this.previous}></button>
+      <img
       alt='next'
       className='scrollButton'
       src={PrevImage}
       style={{height: 10+'rem',
+      zIndex:999,
       width: 5+'rem',
-      marginTop: -7+'rem'}}/></div>,
+      marginLeft: -1+'rem',
+      marginTop: -9+'rem'}}/></div>,
     };
     return (
       <div className='container text-center'>
